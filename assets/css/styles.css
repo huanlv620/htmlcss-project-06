@@ -12,3 +12,145 @@ html {
 body {
     font-size: 1.6rem;
 }
+
+a,
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 170px;
+    height: 62px;
+    background: #5d3bee;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #fdfdfd;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* HEADER */
+.header {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__email-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__email {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1.36;
+    color: #080415;
+}
+
+.header__icon-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #5d3bee33;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav__link {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #51586a;
+    padding: 15px 21px;
+}
+
+.nav__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+/* HERO */
+.hero {
+    margin-top: 44px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__media {
+    width: 514px;
+    height: 705px;
+    object-fit: cover;
+}
+
+.hero__info {
+    width: 500px;
+}
+
+.hero__title {
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: #080415;
+}
+
+.hero__desc {
+    width: 370px;
+    margin: 20px 0 50px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+}
+
+.hero__cta {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-decoration-line: underline;
+    color: #080415;
+    margin-left: 30px;
+}

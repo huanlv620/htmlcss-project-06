@@ -86,7 +86,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
             rel="stylesheet"
         />
 
@@ -100,6 +100,80 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
-        <h1>An Interactive Designer</h1>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-inner">
+                <!-- Email -->
+                <div class="header__email-wrap">
+                    <a
+                        href="mailto:hi@arif.interactive"
+                        class="header__icon-email"
+                    >
+                        <img src="./assets/icon/email.svg" alt="" />
+                    </a>
+                    <a class="header__email" href="mailto:hi@arif.interactive">
+                        hi@arif.interactive
+                    </a>
+                </div>
+
+                <!-- Logo -->
+                <a class="logo" href="#!">
+                    <img src="./assets/icon/logo.svg" alt=""
+                /></a>
+
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Journey</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <!-- HERO -->
+                <section class="hero">
+                    <div class="hero__inner">
+                        <!-- Hero media -->
+                        <figure class="hero__media-wrap">
+                            <img
+                                src="./assets/imgs/hero-media.png"
+                                alt=""
+                                class="hero__media"
+                            />
+                        </figure>
+
+                        <!-- Hero info -->
+                        <div class="hero__info">
+                            <h1 class="hero__title">An Interactive Designer</h1>
+                            <p class="hero__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <div class="hero__row">
+                                <button class="btn hero__btn">
+                                    Book a Call
+                                </button>
+                                <a href="#!" class="hero__cta">My Works</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </body>
 </html>
