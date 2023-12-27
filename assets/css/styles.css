@@ -154,3 +154,47 @@ a {
     color: #080415;
     margin-left: 30px;
 }
+
+/* CLIENT */
+.client {
+    margin-top: 98px;
+}
+
+.client .row {
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.client-heading {
+    position: relative;
+    width: 253px;
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 4.2rem;
+    line-height: 1.19;
+    letter-spacing: -0.04em;
+    color: #080415;
+}
+
+.client-heading::before {
+    --width: 86px;
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: calc(-1 * (var(--width) + 13px));
+    display: block;
+    width: var(--width);
+    border: 2px solid #5d3bee;
+}
+.client-list {
+    display: grid;
+    row-gap: 36px;
+    grid-template-columns: 1fr 1.5fr auto 1fr;
+    margin-right: -15px;
+}
+
+.client__item:nth-child(4),
+.client__item:nth-child(8) {
+    justify-self: end;
+}
