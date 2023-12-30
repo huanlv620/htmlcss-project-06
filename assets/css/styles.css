@@ -765,3 +765,55 @@ a {
     height: 529px;
     object-fit: cover;
 }
+
+/* CTA */
+.cta {
+    margin-top: 140px;
+    background: #fbfaff;
+}
+
+.cta__inner {
+    position: relative;
+    text-align: center;
+    padding: 68px 0;
+}
+
+.cta__heading {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #080415;
+}
+
+.cta__desc {
+    margin: 20px auto 24px;
+    width: 570px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #51586a;
+}
+
+.cta__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.cta__decor-01 {
+    left: 0;
+    bottom: 0;
+}
+
+.cta__decor-02 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cta__decor-03 {
+    right: 0;
+    top: 0;
+}
