@@ -596,3 +596,127 @@ a {
 #people-say-05:checked ~ .people-say__list {
     margin-left: -400%;
 }
+
+/* QUESTION */
+.question {
+    margin-top: 95px;
+}
+
+.question__heading {
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+    color: #080415;
+    margin-bottom: 80px;
+}
+
+.question__item-inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #08182f;
+    padding: 0 0 33px 22px;
+}
+
+.questions__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
+    color: #080415;
+    cursor: pointer;
+}
+
+.question__item-desc {
+    display: none;
+    margin-top: 23px;
+    width: 487px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+.question__item + .question__item {
+    margin-top: 60px;
+}
+
+.question__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #161a1c33;
+    cursor: pointer;
+}
+
+.question__icon {
+    width: 14px;
+    height: 14px;
+}
+
+#question__control:checked,
+#question__control-02:checked,
+#question__control-03:checked,
+#question__control-04:checked,
+#question__control-05:checked ~ .question__item-inner {
+    border-color: #5d3bee;
+    padding-bottom: 21px;
+}
+
+#question__control:checked ~ .question__item-inner .question__item-desc,
+#question__control-02:checked ~ .question__item-inner .question__item-desc,
+#question__control-03:checked ~ .question__item-inner .question__item-desc,
+#question__control-04:checked ~ .question__item-inner .question__item-desc,
+#question__control-05:checked ~ .question__item-inner .question__item-desc {
+    display: block;
+}
+
+#question__control:checked,
+#question__control-02:checked,
+#question__control-03:checked,
+#question__control-04:checked,
+#question__control-05:checked ~ .question__item-inner .questions__title {
+    color: #5d3bee;
+}
+
+#question__control:checked ~ .question__item-inner label .question__icon-more,
+#question__control-02:checked
+    ~ .question__item-inner
+    label
+    .question__icon-more,
+#question__control-03:checked
+    ~ .question__item-inner
+    label
+    .question__icon-more,
+#question__control-04:checked
+    ~ .question__item-inner
+    label
+    .question__icon-more,
+#question__control-05:checked
+    ~ .question__item-inner
+    label
+    .question__icon-more {
+    display: none;
+}
+
+#question__control:checked ~ .question__item-inner label .question__icon-munus,
+#question__control-02:checked
+    ~ .question__item-inner
+    label
+    .question__icon-munus,
+#question__control-03:checked
+    ~ .question__item-inner
+    label
+    .question__icon-munus,
+#question__control-04:checked
+    ~ .question__item-inner
+    label
+    .question__icon-munus,
+#question__control-05:checked
+    ~ .question__item-inner
+    label
+    .question__icon-munus {
+    display: block;
+}
