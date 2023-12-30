@@ -24,6 +24,12 @@ textarea {
     -webkit-tap-highlight-color: transparent;
 }
 
+a,
+button {
+    border: none;
+    outline: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -350,4 +356,243 @@ a {
     position: absolute;
     top: 6px;
     left: 167px;
+}
+
+/* ABOUT */
+.about {
+    margin-top: 140px;
+}
+
+.about__header {
+    text-align: center;
+}
+
+.about__sub-heading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
+    color: #5d3bee;
+}
+
+.about__heading {
+    margin: 10px 0 15px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+    color: #080415;
+}
+
+.about__desc {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #51586a;
+}
+
+.about__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #51586a;
+    border-left: none;
+    border-right: none;
+    margin: 70px 0;
+    padding: 20px 0;
+}
+
+.about__body-item .about__qty {
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    color: #080415;
+}
+
+.about__body-text {
+    margin-top: 8px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+.about__media {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.about__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about__video[poster] {
+    height: 100%;
+}
+
+.about__btn-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
+.about__intro-video {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+    right: 10px;
+    width: 170px;
+    height: 62px;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+/* PEOPLE SAY */
+.people-say {
+    margin-top: 140px;
+}
+
+.people-say .container {
+    overflow: hidden;
+    padding-bottom: 74px;
+}
+
+.people-top {
+    text-align: center;
+}
+
+.people-item__heading {
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.18;
+    letter-spacing: -0.04em;
+    color: #080415;
+}
+
+.people-item__desc {
+    width: 570px;
+    margin: 20px auto 60px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+.people-say__list {
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+    transition: 0.4s ease-out;
+    width: 500%;
+}
+
+.people-item {
+    text-align: center;
+    width: 20%;
+}
+
+.people-item__say {
+    width: 679px;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    line-height: 1.67;
+    color: #51586a;
+}
+
+.people-item__info {
+    margin-top: 36px;
+}
+
+.people-item__info .row {
+    justify-content: center;
+    gap: 15px;
+}
+
+.people-item__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.people-item__name {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.33;
+    text-align: center;
+    color: #080415;
+}
+
+.people-item__job {
+    margin-top: 3px;
+    font-size: 1.6rem;
+    line-height: 1.81;
+    color: #51586a;
+}
+
+.people-say__control {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.people-say__control label {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #080415;
+    opacity: 0.2;
+}
+
+.people-say__control label:hover {
+    cursor: pointer;
+    background: #5d3bee;
+    opacity: 1;
+    outline: 2px solid #5d3bee;
+    outline-offset: 3px;
+}
+
+#people-say-01:checked ~ .people-say__list {
+    margin-left: 0;
+}
+
+#people-say-02:checked ~ .people-say__list {
+    margin-left: -100%;
+}
+
+#people-say-03:checked ~ .people-say__list {
+    margin-left: -200%;
+}
+
+#people-say-04:checked ~ .people-say__list {
+    margin-left: -300%;
+}
+
+#people-say-05:checked ~ .people-say__list {
+    margin-left: -400%;
 }
