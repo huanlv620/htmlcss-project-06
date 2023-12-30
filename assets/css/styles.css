@@ -75,6 +75,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration-line: underline;
 }
 
 .header__email {
@@ -775,7 +776,16 @@ a {
 .cta__inner {
     position: relative;
     text-align: center;
+    width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 68px 0;
+}
+
+.cta__heading,
+.cta__desc {
+    position: relative;
+    z-index: 2;
 }
 
 .cta__heading {
@@ -799,7 +809,6 @@ a {
 
 .cta__decor {
     position: absolute;
-    z-index: -1;
 }
 
 .cta__decor-01 {
@@ -816,4 +825,42 @@ a {
 .cta__decor-03 {
     right: 0;
     top: 0;
+}
+
+/* FOOTER */
+.footer {
+    padding: 50px 0 30px;
+}
+
+.footer__inner {
+    border-bottom: 1px solid #0c0720;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #525771;
+    opacity: 0.6;
+}
+
+.footer__bottom-right {
+    display: flex;
+    letter-spacing: -0.03em;
+}
+
+.footer__bottom-right p:last-child {
+    padding-right: 23px;
+}
+
+.footer__bottom-right p:first-child::after {
+    margin: 0px 13px 0 23px;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #525771;
 }
