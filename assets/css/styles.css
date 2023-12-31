@@ -502,6 +502,7 @@ a {
 
 /* PEOPLE SAY */
 .people-say {
+    position: relative;
     margin-top: 140px;
 }
 
@@ -622,6 +623,19 @@ a {
 
 #people-say-05:checked ~ .people-say__list {
     margin-left: -400%;
+}
+
+.people-say__decor {
+    position: absolute;
+    bottom: 0;
+}
+
+.people-say__decor:nth-of-type(1) {
+    left: 0;
+}
+
+.people-say__decor:nth-of-type(2) {
+    right: 0;
 }
 
 /* QUESTION */
