@@ -211,4 +211,139 @@
     .hero-follow__img-wrap + .hero-follow__img-wrap {
         margin-left: 15px;
     }
+
+    .client-list a:nth-of-type(even) {
+        justify-self: center;
+    }
+    /* specialities */
+    .specialities .container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .specialities__list {
+        width: 300%;
+        overflow: hidden;
+        gap: 0;
+        transition: 0.5s ease;
+        margin-bottom: 24px;
+    }
+
+    .specialities__item {
+        width: 100%;
+    }
+
+    .specialities__desc {
+        width: 355px;
+        margin-bottom: 18px;
+    }
+
+    .specialities__item {
+        width: 100%;
+    }
+
+    .specialities__item-desc {
+        width: 250px;
+    }
+
+    .specialities__control {
+        position: absolute;
+        padding: 6px 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        margin-top: 30px;
+    }
+
+    .specialities__control label {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #080415;
+        opacity: 0.2;
+    }
+
+    .specialities__control label:hover {
+        cursor: pointer;
+        background: #5d3bee;
+        opacity: 1;
+        outline: 2px solid #5d3bee;
+        outline-offset: 3px;
+    }
+
+    #specialitie-01:checked ~ .specialities__list {
+        margin-left: 0;
+    }
+    #specialitie-02:checked ~ .specialities__list {
+        margin-left: -100%;
+    }
+    #specialitie-03:checked ~ .specialities__list {
+        margin-left: -200%;
+    }
+
+    /* MY PROJECT */
+    .project {
+        margin-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .project .container {
+        padding: 0 20px;
+    }
+
+    .project__top {
+        gap: 0;
+        flex-direction: column;
+    }
+    .project__heading {
+        width: 100%;
+        font-size: 3.6rem;
+        text-align: center;
+    }
+    .project__desc {
+        width: 350px;
+        font-size: 1.6rem;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .project-item {
+        column-gap: 22px;
+    }
+
+    .project-item__title {
+        font-size: 2.4rem;
+    }
+
+    .project-item__desc {
+        margin: 4px 0;
+        font-size: 1.4rem;
+    }
+
+    .project-item__link {
+        font-size: 1.6rem;
+    }
+
+    .project-item__img {
+        width: 122px;
+        height: 93px;
+    }
+
+    .project__btn {
+        width: 154px;
+        height: 56px;
+        font-size: 1.6rem;
+        margin-top: 50px;
+    }
+
+    .project__list .row-cols-md-2:last-of-type {
+        margin-top: 20px;
+    }
+
+    .project__list .row .col:last-child {
+        margin-top: 20px;
+    }
 }

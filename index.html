@@ -276,7 +276,7 @@
             </section>
 
             <!-- CLIENTS -->
-            <section style="display: none" class="client">
+            <section class="client">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-12 offset-md-1">
@@ -284,7 +284,7 @@
                                 Meet my recent clients
                             </h2>
                         </div>
-                        <div class="col-md-8 col-12">
+                        <div class="col-md-8 col-sm-12">
                             <div class="client-list">
                                 <a href="#!">
                                     <img
@@ -357,7 +357,7 @@
             </section>
 
             <!--SPECIALITIES -->
-            <section style="display: none" class="specialities">
+            <section class="specialities">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -373,83 +373,99 @@
                     </div>
 
                     <!-- specialities__list -->
+                    <input
+                        hidden
+                        class="hide-on-pc-table"
+                        type="radio"
+                        name="specialitie"
+                        id="specialitie-01"
+                    />
+                    <input
+                        hidden
+                        class="hide-on-pc-table"
+                        type="radio"
+                        name="specialitie"
+                        id="specialitie-02"
+                    />
+                    <input
+                        hidden
+                        class="hide-on-pc-table"
+                        type="radio"
+                        name="specialitie"
+                        id="specialitie-03"
+                    />
+
                     <div class="specialities__list">
-                        <div class="row">
-                            <!-- Item 1 -->
-                            <div class="col-lg-4">
-                                <article class="specialities__item">
-                                    <figure class="specialities__img-wrap">
-                                        <img
-                                            class="specialities__img"
-                                            src="./assets/icon/specialities-01.svg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <a href="#!">
-                                        <h3 class="specialities__title">
-                                            Product design
-                                        </h3>
-                                    </a>
-                                    <p class="specialities__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
-                            </div>
+                        <!-- Item 1 -->
+                        <article class="specialities__item">
+                            <figure class="specialities__img-wrap">
+                                <img
+                                    class="specialities__img"
+                                    src="./assets/icon/specialities-01.svg"
+                                    alt=""
+                                />
+                            </figure>
+                            <a href="#!">
+                                <h3 class="specialities__title">
+                                    Product design
+                                </h3>
+                            </a>
+                            <p class="specialities__item-desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </article>
 
-                            <!-- Item 2 -->
-                            <div class="col-lg-4">
-                                <article class="specialities__item">
-                                    <figure class="specialities__img-wrap">
-                                        <img
-                                            class="specialities__img"
-                                            src="./assets/icon/specialities-02.svg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <a href="#!">
-                                        <h3 class="specialities__title">
-                                            UI/UX Design
-                                        </h3>
-                                    </a>
-                                    <p class="specialities__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
-                            </div>
+                        <!-- Item 2 -->
+                        <article class="specialities__item">
+                            <figure class="specialities__img-wrap">
+                                <img
+                                    class="specialities__img"
+                                    src="./assets/icon/specialities-02.svg"
+                                    alt=""
+                                />
+                            </figure>
+                            <a href="#!">
+                                <h3 class="specialities__title">
+                                    UI/UX Design
+                                </h3>
+                            </a>
+                            <p class="specialities__item-desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </article>
 
-                            <!-- Item 3-->
-                            <div class="col-lg-4">
-                                <article class="specialities__item">
-                                    <figure class="specialities__img-wrap">
-                                        <img
-                                            class="specialities__img"
-                                            src="./assets/icon/specialities-03.svg"
-                                            alt=""
-                                        />
-                                    </figure>
-                                    <a href="#!">
-                                        <h3 class="specialities__title">
-                                            Interactive design
-                                        </h3>
-                                    </a>
-                                    <p class="specialities__item-desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
-                            </div>
-                        </div>
+                        <!-- Item 3-->
+                        <article class="specialities__item">
+                            <figure class="specialities__img-wrap">
+                                <img
+                                    class="specialities__img"
+                                    src="./assets/icon/specialities-03.svg"
+                                    alt=""
+                                />
+                            </figure>
+                            <a href="#!">
+                                <h3 class="specialities__title">
+                                    Interactive design
+                                </h3>
+                            </a>
+                            <p class="specialities__item-desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="hide-on-pc-table specialities__control">
+                        <label for="specialitie-01"></label>
+                        <label for="specialitie-02"></label>
+                        <label for="specialitie-03"></label>
                     </div>
                 </div>
             </section>
 
             <!-- MY PROJECT -->
-            <section style="display: none" class="project">
+            <section class="project">
                 <div class="container">
                     <div class="project__top">
                         <h2 class="project__heading">
@@ -465,7 +481,7 @@
 
                     <!-- Project list -->
                     <div class="project__list">
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-md-2 row-cols-1">
                             <!-- Project 1 -->
                             <div class="col">
                                 <article class="project-item">
@@ -505,6 +521,7 @@
                                     </figure>
                                 </article>
                             </div>
+
                             <div class="col">
                                 <!-- Project 2 -->
                                 <article class="project-item">
@@ -539,7 +556,8 @@
                                 </article>
                             </div>
                         </div>
-                        <div class="row row-cols-2">
+
+                        <div class="row row-cols-md-2 row-cols-1">
                             <div class="col">
                                 <!-- Project 3 -->
                                 <article class="project-item">
@@ -607,6 +625,7 @@
                                 </article>
                             </div>
                         </div>
+
                         <a href="#!" class="btn project__btn">All Projects</a>
                     </div>
                 </div>

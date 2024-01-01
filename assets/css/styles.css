@@ -255,6 +255,12 @@ a {
     color: #51586a;
 }
 
+.specialities__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 72px;
+}
+
 .specialities__item {
     padding: 32px 42px;
 }
@@ -366,7 +372,7 @@ a {
     object-fit: cover;
 }
 
-.project__list .row-cols-2:last-of-type {
+.project__list .row-cols-md-2:last-of-type {
     margin-top: 30px;
 }
 
