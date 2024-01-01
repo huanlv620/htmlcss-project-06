@@ -804,6 +804,9 @@ a {
 }
 
 .atmosphere__list {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 70px;
 }
 

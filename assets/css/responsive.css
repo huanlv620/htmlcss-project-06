@@ -484,4 +484,104 @@
         width: 9px;
         height: 9px;
     }
+
+    /* ATMOSPHERE */
+    .atmosphere .container {
+    }
+
+    .atmosphere__heading {
+        font-size: 3.6rem;
+    }
+
+    .atmosphere__desc {
+        width: 350px;
+        margin: 20px auto 10px;
+        font-size: 1.6rem;
+    }
+
+    .atmosphere__mail {
+        font-size: 2rem;
+    }
+
+    .atmosphere__show-list {
+        overflow: hidden;
+    }
+
+    .atmosphere__list {
+        width: 300%;
+        gap: 0;
+        transition: 0.5s ease;
+    }
+
+    .atmosphere__img-wrap {
+        height: 503px;
+    }
+
+    .atmosphere__img {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .atmosphere__control {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        margin-top: 30px;
+        padding: 6px 0;
+    }
+
+    .atmosphere__control label {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #080415;
+        opacity: 0.2;
+    }
+
+    .atmosphere__control label:hover {
+        cursor: pointer;
+        background: #5d3bee;
+        opacity: 1;
+        outline: 2px solid #5d3bee;
+        outline-offset: 3px;
+    }
+
+    #atmosphere-01:checked ~ .atmosphere__list {
+        margin-left: 0;
+    }
+    #atmosphere-02:checked ~ .atmosphere__list {
+        margin-left: -100%;
+    }
+    #atmosphere-03:checked ~ .atmosphere__list {
+        margin-left: -200%;
+    }
+
+    /* CTA */
+    .cta {
+        margin-top: 120px;
+        padding: 35px 22px;
+    }
+
+    .cta .cta__inner {
+        width: 100%;
+    }
+
+    .cta__heading {
+        font-size: 3.6rem;
+        width: 225px;
+        margin: 0 auto 10px;
+    }
+
+    .cta__desc {
+        font-size: 1.6rem;
+        width: 350px;
+    }
+
+    .cta__btn {
+        font-size: 1.6rem;
+    }
+
+    .cta__decor-on-mobile {
+        width: 100%;
+    }
 }
