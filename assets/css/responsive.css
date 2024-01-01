@@ -1,5 +1,9 @@
 /* Tablet & Mobile & PC */
 @media (min-width: 576px) {
+    .hide-on-pc-table {
+        display: none;
+    }
+
     .menu-mobile,
     .menu-on-mobile {
         display: none;
@@ -16,15 +20,22 @@
 
 /* Mobile */
 @media (max-width: 575.98px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
     .btn {
         width: 147px;
         height: 55px;
     }
 
     .header-inner {
-        max-width: 100%;
+        max-width: calc(100% - 14px);
+        margin-left: auto;
+        margin-right: auto;
         height: 100%;
         flex-direction: row-reverse;
+        border-bottom: 1px solid #d6d3e2;
     }
     .header__email,
     .nav {
@@ -163,5 +174,41 @@
     }
     .client-list img:nth-child(odd) {
         justify-self: left;
+    }
+
+    .hero__decor-on-mobile {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        top: -50px;
+        left: 0;
+    }
+
+    .hero-follow {
+        display: flex;
+        align-items: center;
+        margin: 25px 0 20px;
+    }
+
+    .hero-follow__text {
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.43;
+        color: #51586a;
+    }
+
+    .hero-follow__img-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        border: 1px solid #161a1c33;
+    }
+
+    .hero-follow__img-wrap + .hero-follow__img-wrap {
+        margin-left: 15px;
     }
 }
