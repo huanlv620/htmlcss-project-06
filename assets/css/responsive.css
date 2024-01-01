@@ -12,6 +12,10 @@
 
 /* Tablet & Mobile*/
 @media (max-width: 991.98px) {
+    html,
+    body {
+        overscroll-behavior: none;
+    }
     .btn {
         width: 147px;
         height: 55px;
@@ -127,11 +131,6 @@
 
 /* Mobile */
 @media (max-width: 575.98px) {
-    html,
-    body {
-        overscroll-behavior: none;
-    }
-
     .hide-on-mobile {
         display: none;
     }
