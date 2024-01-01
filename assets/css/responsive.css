@@ -230,6 +230,7 @@
     }
 
     .specialities__item {
+        padding: 0 70px;
         width: 100%;
     }
 
@@ -349,6 +350,56 @@
     }
 
     .project-item__decor {
-        height: 100%;
+        display: none;
+    }
+
+    /* ABOUT */
+    .about {
+        margin-top: 120px;
+    }
+
+    .about .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about__sub-heading {
+        font-size: 2rem;
+    }
+
+    .about__heading {
+        font-size: 3.6rem;
+        margin-bottom: 20px;
+    }
+
+    .about__desc {
+        width: 350px;
+        font-size: 1.6rem;
+    }
+
+    .about__body {
+        column-gap: 50px;
+        padding: 30px 36px;
+    }
+
+    .about__qty {
+        font-size: 3rem;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+    }
+
+    .about__body-text {
+        font-size: 1.6rem;
+    }
+
+    .about__btn-play {
+        width: 77px;
+        height: 77px;
+    }
+
+    .about__intro-video {
+        width: 118px;
+        height: 44px;
+        font-size: 1.2rem;
     }
 }
