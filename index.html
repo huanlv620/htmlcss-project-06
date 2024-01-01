@@ -1205,8 +1205,8 @@
         </main>
 
         <!-- FOOTER -->
-        <footer style="display: none" class="footer">
-            <div class="footer__inner header-inner">
+        <footer class="footer">
+            <div class="footer__inner header-inner hide-on-mobile">
                 <!-- Email -->
                 <div class="header__email-wrap">
                     <a
@@ -1260,11 +1260,54 @@
                 </nav>
             </div>
 
+            <!-- Footer on mobile -->
+            <div class="footer-on-mobile hide-on-pc-table">
+                <!-- Logo -->
+                <div class="footer-block">
+                    <a class="logo" href="#!">
+                        <img src="./assets/icon/logo.svg" alt=""
+                    /></a>
+                </div>
+
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul id="pc-nav" class="nav-list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Journey</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Service</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Email -->
+                <div class="header__email-wrap">
+                    <a
+                        href="mailto:hi@arif.interactive"
+                        class="header__icon-email"
+                    >
+                        <img src="./assets/icon/email.svg" alt="" />
+                    </a>
+
+                    <a class="header__email" href="mailto:hi@arif.interactive">
+                        hi@arif.interactive
+                    </a>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="footer__bottom">
                     <p class="footer__coppyright">
                         ©interactiveArif 2021. All rights reserved.
                     </p>
+                    <div class="line-on-mobile hide-on-pc-table"></div>
                     <div class="footer__bottom-right">
                         <p class="">Privacy Policy</p>
                         <p class="">Terms of Conditions</p>

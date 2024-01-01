@@ -584,4 +584,46 @@
     .cta__decor-on-mobile {
         width: 100%;
     }
+
+    /* FOOTER MOBILE */
+    .footer-on-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-on-mobile .nav {
+        display: block;
+        margin: 20px 0 58px;
+    }
+
+    .footer-on-mobile .nav__link {
+        font-size: 1.6rem;
+        padding: 15px 19px;
+    }
+
+    .footer-on-mobile .header__email {
+        display: block;
+    }
+
+    .footer__bottom {
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 50px;
+        margin-top: 0;
+    }
+
+    .footer__bottom-right {
+        margin-top: 50px;
+    }
+
+    .line-on-mobile {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        background-color: #0c0720;
+        height: 1px;
+    }
 }
