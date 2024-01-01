@@ -12,18 +12,6 @@
 
 /* Tablet & Mobile*/
 @media (max-width: 991.98px) {
-}
-
-/* Tablet */
-@media (min-width: 576px) and (max-width: 991.98px) {
-}
-
-/* Mobile */
-@media (max-width: 575.98px) {
-    .hide-on-mobile {
-        display: none;
-    }
-
     .btn {
         width: 147px;
         height: 55px;
@@ -37,6 +25,7 @@
         flex-direction: row-reverse;
         border-bottom: 1px solid #d6d3e2;
     }
+
     .header__email,
     .nav {
         display: none;
@@ -117,6 +106,34 @@
     .hero__inner {
         flex-direction: column-reverse;
         padding: 0 20px;
+    }
+
+    .project__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .client .col-md-12:first-of-type {
+        margin-bottom: 24px;
+    }
+
+    .specialities__list,
+    .atmosphere__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    html,
+    body {
+        overscroll-behavior: none;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 
     .hero__info {
@@ -219,7 +236,7 @@
         overflow: hidden;
         gap: 0;
         transition: 0.5s ease;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
     }
 
     .specialities__item {
@@ -408,6 +425,10 @@
 
     .people-say .container {
         padding-bottom: 67px;
+    }
+
+    .people-top {
+        padding: 0 20px;
     }
 
     .people-item__heading {
@@ -616,37 +637,5 @@
         bottom: 50px;
         background-color: #0c0720;
         height: 1px;
-    }
-}
-
-@media (max-width: 320px) {
-    .client-list {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .client .col-sm-12 {
-        width: 100%;
-    }
-
-    .specialities__item {
-        padding: 0 20px;
-    }
-
-    .questions__title {
-        font-size: 2rem;
-    }
-
-    .questions__title {
-        width: 200px;
-    }
-
-    .atmosphere__top {
-        padding: 0 20px;
-    }
-
-    .footer__bottom-right p,
-    .footer__coppyright {
-        font-size: 1.4rem;
     }
 }
