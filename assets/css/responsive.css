@@ -312,6 +312,7 @@
 
     .project-item {
         column-gap: 22px;
+        padding: 20px 15px;
     }
 
     .project-item__title {
@@ -345,5 +346,9 @@
 
     .project__list .row .col:last-child {
         margin-top: 20px;
+    }
+
+    .project-item__decor {
+        height: 100%;
     }
 }
