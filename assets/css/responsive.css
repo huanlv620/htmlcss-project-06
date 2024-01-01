@@ -176,14 +176,6 @@
         justify-self: left;
     }
 
-    .hero__decor-on-mobile {
-        position: absolute;
-        display: block;
-        z-index: -1;
-        top: -50px;
-        left: 0;
-    }
-
     .hero-follow {
         display: flex;
         align-items: center;
@@ -235,7 +227,7 @@
     }
 
     .specialities__desc {
-        width: 355px;
+        width: 100%;
         margin-bottom: 18px;
     }
 
@@ -305,7 +297,7 @@
         text-align: center;
     }
     .project__desc {
-        width: 350px;
+        width: 100%;
         font-size: 1.6rem;
         margin: 20px auto 0;
         text-align: center;
@@ -373,7 +365,7 @@
     }
 
     .about__desc {
-        width: 350px;
+        width: 100%;
         font-size: 1.6rem;
     }
 
@@ -422,7 +414,7 @@
     }
 
     .people-item__desc {
-        width: 350px;
+        width: 100%;
         font-size: 1.6rem;
         margin-bottom: 40px;
     }
@@ -486,15 +478,13 @@
     }
 
     /* ATMOSPHERE */
-    .atmosphere .container {
-    }
 
     .atmosphere__heading {
         font-size: 3.6rem;
     }
 
     .atmosphere__desc {
-        width: 350px;
+        width: 100%;
         margin: 20px auto 10px;
         font-size: 1.6rem;
     }
@@ -574,7 +564,7 @@
 
     .cta__desc {
         font-size: 1.6rem;
-        width: 350px;
+        width: 100%;
     }
 
     .cta__btn {
@@ -599,7 +589,7 @@
 
     .footer-on-mobile .nav__link {
         font-size: 1.6rem;
-        padding: 15px 19px;
+        padding: 15px 10px;
     }
 
     .footer-on-mobile .header__email {
