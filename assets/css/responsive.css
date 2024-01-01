@@ -449,4 +449,39 @@
     .people-item__name {
         font-size: 2.4rem;
     }
+
+    /* QUESTION */
+    .question {
+        margin-top: 140px;
+    }
+
+    .question .container {
+        padding: 0 10px;
+    }
+
+    .question__heading {
+        font-size: 3.6em;
+        margin: 0 0 40px 20px;
+    }
+
+    .questions__title {
+        font-size: 2.4rem;
+        width: 264px;
+    }
+
+    .question__item-desc {
+        font-size: 1.6rem;
+        width: 316px;
+    }
+
+    .question__icon-wrap {
+        width: 33px;
+        height: 33px;
+        flex-shrink: 0;
+    }
+
+    .question__icon {
+        width: 9px;
+        height: 9px;
+    }
 }
