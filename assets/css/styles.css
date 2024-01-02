@@ -223,15 +223,16 @@ a {
     margin-top: 98px;
 }
 
-.client .row {
+.client__inner {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .client-heading {
     position: relative;
-    width: 253px;
+    flex-shrink: 0;
+    padding-left: 99px;
     font-family: "DM Sans";
     font-weight: 500;
     font-size: 4.2rem;
@@ -245,7 +246,7 @@ a {
     content: "";
     position: absolute;
     top: 22px;
-    left: calc(-1 * (var(--width) + 13px));
+    left: 0;
     display: block;
     width: var(--width);
     border: 2px solid #5d3bee;
@@ -253,19 +254,8 @@ a {
 
 .client-list {
     display: grid;
-    row-gap: 36px;
-    grid-template-columns: 1fr 1.5fr auto 1fr;
-    margin-right: -15px;
-}
-
-.client-list a:nth-child(4),
-.client-list a:nth-child(8) {
-    justify-self: end;
-}
-
-.client__item:nth-child(4),
-.client__item:nth-child(8) {
-    justify-self: end;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    gap: 36px;
 }
 
 /* SPECIALITIES */
