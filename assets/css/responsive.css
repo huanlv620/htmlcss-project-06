@@ -475,7 +475,8 @@
 
     .question__item-desc {
         font-size: 1.6rem;
-        width: 316px;
+        width: 100%;
+        text-align: justify;
     }
 
     .question__icon-wrap {
