@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,6 +59,11 @@ a {
 
 /* HEADER */
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
     height: 100px;
     margin-top: 10px;
 }
@@ -144,6 +150,7 @@ a {
 
 .hero__info {
     width: 500px;
+    padding-top: 70px;
 }
 
 .hero__title {
@@ -162,6 +169,34 @@ a {
     color: #51586a;
 }
 
+.hero-follow {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.hero-follow__text {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #51586a;
+}
+
+.hero-follow__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1px solid #161a1c33;
+}
+
+.hero-follow__img-wrap + .hero-follow__img-wrap {
+    margin-left: 15px;
+}
+
 .hero__row {
     display: flex;
     align-items: center;
@@ -178,6 +213,7 @@ a {
 
 .hero__decor-02 {
     position: absolute;
+    z-index: -1;
     bottom: 0;
     right: -100px;
 }
@@ -263,6 +299,11 @@ a {
 
 .specialities__item {
     padding: 32px 42px;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.specialities__item:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 
 .specialities__img-wrap {
@@ -299,10 +340,10 @@ a {
 
 /* PROJECT */
 .project {
-    margin-top: 140px;
+    margin-top: 40px;
     width: 100%;
     background: #5d3bee;
-    padding: 86px 0;
+    padding: 186px 0 86px;
 }
 
 .project__top {
@@ -396,7 +437,7 @@ a {
 
 /* ABOUT */
 .about {
-    margin-top: 140px;
+    padding-top: 140px;
 }
 
 .about__header {
@@ -507,6 +548,7 @@ a {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #51586a;
+    cursor: pointer;
 }
 
 /* PEOPLE SAY */
@@ -649,7 +691,7 @@ a {
 
 /* QUESTION */
 .question {
-    margin-top: 95px;
+    padding-top: 95px;
 }
 
 .question__heading {
@@ -921,11 +963,11 @@ a {
     letter-spacing: -0.03em;
 }
 
-.footer__bottom-right p:last-child {
+.footer__bottom-right a:last-child {
     padding-right: 23px;
 }
 
-.footer__bottom-right p:first-child::after {
+.footer__bottom-right a:first-child::after {
     margin: 0px 13px 0 23px;
     content: "";
     display: inline-block;

@@ -1,6 +1,6 @@
 /* Tablet & Mobile & PC */
-@media (min-width: 576px) {
-    .hide-on-pc-table {
+@media (min-width: 992px) {
+    .hide-on-pc {
         display: none;
     }
 
@@ -16,9 +16,19 @@
     body {
         overscroll-behavior: none;
     }
+
     .btn {
         width: 147px;
         height: 55px;
+    }
+
+    .menu-on-mobile {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hide-on-table {
+        display: none;
     }
 
     .header-inner {
@@ -194,31 +204,7 @@
     }
 
     .hero-follow {
-        display: flex;
-        align-items: center;
         margin: 25px 0 20px;
-    }
-
-    .hero-follow__text {
-        margin-right: 10px;
-        font-weight: 500;
-        font-size: 1.4rem;
-        line-height: 1.43;
-        color: #51586a;
-    }
-
-    .hero-follow__img-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 31px;
-        height: 31px;
-        border-radius: 50%;
-        border: 1px solid #161a1c33;
-    }
-
-    .hero-follow__img-wrap + .hero-follow__img-wrap {
-        margin-left: 15px;
     }
 
     .client-list a:nth-of-type(even) {
@@ -506,6 +492,7 @@
 
     .atmosphere__desc {
         width: 100%;
+        padding: 0 20px;
         margin: 20px auto 10px;
         font-size: 1.6rem;
     }

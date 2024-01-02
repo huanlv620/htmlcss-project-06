@@ -136,7 +136,7 @@
                 </div>
 
                 <!-- Logo -->
-                <a class="logo" href="#!">
+                <a class="logo" href="#">
                     <img src="./assets/icon/logo.svg" alt=""
                 /></a>
 
@@ -144,16 +144,16 @@
                 <nav class="nav">
                     <ul id="pc-nav" class="nav-list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Projects</a>
+                            <a href="#project" class="nav__link">Projects</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Journey</a>
+                            <a href="#journey" class="nav__link">Journey</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Service</a>
+                            <a href="#service" class="nav__link">Service</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Contact</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -234,7 +234,7 @@
                             </div>
 
                             <!-- Follow me -->
-                            <div class="hero-follow hide-on-pc-table">
+                            <div class="hero-follow">
                                 <p class="hero-follow__text">Follow me on:</p>
                                 <div class="hero-follow__img-wrap">
                                     <img
@@ -369,7 +369,7 @@
                     <!-- specialities__list -->
                     <input
                         hidden
-                        class="hide-on-pc-table"
+                        class="hide-on-pc hide-on-table"
                         type="radio"
                         name="specialitie"
                         id="specialitie-01"
@@ -450,7 +450,7 @@
                             </p>
                         </article>
                     </div>
-                    <div class="hide-on-pc-table specialities__control">
+                    <div class="hide-on-pc hide-on-table specialities__control">
                         <label for="specialitie-01"></label>
                         <label for="specialitie-02"></label>
                         <label for="specialitie-03"></label>
@@ -459,7 +459,7 @@
             </section>
 
             <!-- MY PROJECT -->
-            <section class="project">
+            <section id="project" class="project">
                 <div class="container">
                     <div class="project__top">
                         <h2 class="project__heading">
@@ -613,8 +613,8 @@
                 </div>
             </section>
 
-            <!-- ABOUT -->
-            <section class="about">
+            <!--  ABOUT -->
+            <section id="journey" class="about">
                 <div class="container">
                     <div class="about'__inner">
                         <!-- About header -->
@@ -664,7 +664,9 @@
                                     alt=""
                                 />
                             </button>
-                            <div class="about__intro-video">Intro Video</div>
+                            <button class="about__intro-video">
+                                Intro Video
+                            </button>
                         </figure>
                     </div>
                 </div>
@@ -857,19 +859,19 @@
                     </div>
                 </div>
                 <img
-                    class="people-say__decor hide-on-pc-table"
+                    class="people-say__decor hide-on-pc hide-on-table"
                     src="./assets/imgs/people-decor-01.svg"
                     alt=""
                 />
                 <img
-                    class="people-say__decor hide-on-pc-table"
+                    class="people-say__decor hide-on-pc hide-on-table"
                     src="./assets/imgs/people-decor-02.svg"
                     alt=""
                 />
             </section>
 
             <!-- QUESTIONS-->
-            <section class="question">
+            <section id="service" class="question">
                 <div class="container">
                     <h2 class="question__heading">
                         A few questions <br />
@@ -1186,7 +1188,7 @@
         </main>
 
         <!-- FOOTER -->
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="footer__inner header-inner hide-on-mobile">
                 <!-- Email -->
                 <div class="header__email-wrap">
@@ -1218,7 +1220,7 @@
                 </div>
 
                 <!-- Logo -->
-                <a class="logo" href="#!">
+                <a class="logo" href="#">
                     <img src="./assets/icon/logo.svg" alt=""
                 /></a>
 
@@ -1226,26 +1228,26 @@
                 <nav class="nav">
                     <ul id="pc-nav" class="nav-list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Projects</a>
+                            <a href="#project" class="nav__link">Projects</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Journey</a>
+                            <a href="#journey" class="nav__link">Journey</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Service</a>
+                            <a href="#service" class="nav__link">Service</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Contact</a>
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
 
             <!-- Footer on mobile -->
-            <div class="footer-on-mobile hide-on-pc-table">
+            <div class="footer-on-mobile hide-on-pc hide-on-table">
                 <!-- Logo -->
                 <div class="footer-block">
-                    <a class="logo" href="#!">
+                    <a class="logo" href="#">
                         <img src="./assets/icon/logo.svg" alt=""
                     /></a>
                 </div>
@@ -1288,10 +1290,10 @@
                     <p class="footer__coppyright">
                         ©interactiveArif 2021. All rights reserved.
                     </p>
-                    <div class="line-on-mobile hide-on-pc-table"></div>
+                    <div class="line-on-mobile hide-on-pc hide-on-table"></div>
                     <div class="footer__bottom-right">
-                        <p class="">Privacy Policy</p>
-                        <p class="">Terms of Conditions</p>
+                        <a href="#!" class="">Privacy Policy</a>
+                        <a href="#!" class="">Terms of Conditions</a>
                     </div>
                 </div>
             </div>
