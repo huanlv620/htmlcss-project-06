@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /dang-ky.html
+Disallow: /dang-nhap.html
+Sitemap:  https://huanlv620.github.io/htmlcss-project-06/sitemap.xml
